@@ -30,8 +30,8 @@ const BarChartComponent = ({ data }) => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="Agent A" fill="#FF85C0" />
-            <Bar dataKey="Agent B" fill="#B37FEB" />
+            <Bar dataKey="Complete UseCase" fill="#FF85C0" />
+                <Bar dataKey="Incompleted UseCase" fill="#B37FEB" />
         </BarChart>
         </ResponsiveContainer>
     );

@@ -125,13 +125,13 @@ const MainLayout = () => {
   //   // Add more data as needed
   // ];
   const stackedBarChartData = [
-    { name: 'A', value1: 30, value2: 20 },
-    { name: 'B', value1: 60, value2: 40 },
-    { name: 'C', value1: 45, value2: 25 },
-    { name: 'D', value1: 80, value2: 30 },
-    { name: 'E', value1: 80, value2: 30 },
-    { name: 'F', value1: 80, value2: 30 },
-    { name: 'G', value1: 80, value2: 30 },
+    { name: 'Angela', value1: 30, value2: 20 },
+    { name: 'Jhosna', value1: 60, value2: 40 },
+    { name: 'Scarlett', value1: 45, value2: 25 },
+    { name: 'Benny', value1: 80, value2: 30 },
+    { name: 'Andy', value1: 80, value2: 30 },
+    { name: 'Chris', value1: 80, value2: 30 },
+    { name: 'Rocco', value1: 80, value2: 30 },
     // Add more data as needed
   ];
   const data = [
@@ -179,16 +179,12 @@ const MainLayout = () => {
     },
   ];
   const barChartData = [
-    { name: 'Category 1', 'Agent A': 30, 'Agent B': 20 },
-    { name: 'Category 2', 'Agent A': 60, 'Agent B': 40 },
-    { name: 'Category 3', 'Agent A': 45, 'Agent B': 25 },
-    { name: 'Category 4', 'Agent A': 80, 'Agent B': 30 },
-    { name: 'Category 5', 'Agent A': 80, 'Agent B': 30 },
-    { name: 'Category 6', 'Agent A': 30, 'Agent B': 20 },
-    { name: 'Category 7', 'Agent A': 60, 'Agent B': 40 },
-    { name: 'Category 8', 'Agent A': 45, 'Agent B': 25 },
-    { name: 'Category 9', 'Agent A': 80, 'Agent B': 30 },
-    { name: 'Category 10', 'Agent A': 80, 'Agent B': 30 },
+    { name: 'Prourement', 'Completed': 30, 'Incompleted': 20 },
+    { name: 'HRMS', 'Completed': 60, 'Incompleted': 40 },
+    { name: 'Appkube', 'Completed': 45, 'Incompleted': 25 },
+    { name: 'EMS', 'Completed': 80, 'Incompleted': 30 },
+    { name: 'Xformation', 'Completed': 80, 'Incompleted': 30 },
+    { name: 'SPM', 'Completed': 30, 'Incompleted': 20 },
     // Add more data as needed
   ];
   const tabData = [
@@ -255,13 +251,13 @@ const MainLayout = () => {
                 key: '1',
                 icon: <ProjectFilled />,
                 label: 'Dashboard',
-                path:'/'
+                path: '/'
               },
               {
                 key: '2',
                 icon: <VideoCameraOutlined />,
                 label: 'Projects',
-                path:'/projects'
+                path: '/projects'
               },
               {
                 key: '3',
@@ -301,40 +297,7 @@ const MainLayout = () => {
         <Layout className="site-layout" style={{ marginLeft: collapsed ? 80 : 200 }}>
           <Navbar />
           <Content style={{ margin: '18px 16px', padding: '0px 10px', minHeight: 280 }}>
-            <h1 className='ml-2 uppercase text-3xl'>workflow Management</h1>
-            <div className="flex flex-row gap-9 w-full">
-              <Cards {...cardData1} />
-              <Cards {...cardData2} />
-              <Cards {...cardData3} />
-              <Cards {...cardData4} />
-            </div>
-            <div className="flex flex-col space-y-6">
-              <div className="bg-white my-6 p-10">
-                <div className="flex flex-col">
-                  <h2 className='text-3xl'>Project Overview</h2>
-                  <div className="divide-y divide-gray-400 hover:divide-y-8"></div>
-                  <Divider type="vertical" />
-                  {/* <BarChart data={barChartData} /> */}
-                  <BarChart data={barChartData} />
-                </div>
-              </div>
-            </div>
-            <div className="bg-white my-6 p-10">
-              <div className="flex flex-col justify-center items-start">
-                <div className="flex flex-col">
-                  <h2 className='text-3xl'>Top Project Resources</h2>
-                  <h5 className='text-xl'>Top most resources working on top projects</h5>
-                </div>
-                <StackedBarChart data={stackedBarChartData} />
-              </div>
-            </div>
-            <div className='my-5'>
-              <ProjectsList/>
-            </div>
-            <div>
-              <Resources />
-            </div>
-            <projectLayout/>
+
           </Content>
         </Layout>
       </Layout>

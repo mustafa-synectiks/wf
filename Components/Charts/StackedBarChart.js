@@ -30,9 +30,9 @@ const StackedBarChart = ({ data }) => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="value1" stackId="a" fill="#006D75" barSize={45} />
-                <Bar dataKey="value2" stackId="a" fill="#13C2C2" barSize={45} />
-                <Bar dataKey="value2" stackId="a" fill="#87E8DE" barSize={45} />
+                <Bar dataKey="Pending Task" stackId="a" fill="#006D75" barSize={45} />
+                <Bar dataKey="In Progress Task" stackId="a" fill="#13C2C2" barSize={45} />
+                <Bar dataKey="Completed Task" stackId="a" fill="#87E8DE" barSize={45} />
             </BarChart>
         </ResponsiveContainer>
     );

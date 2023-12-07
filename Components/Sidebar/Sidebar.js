@@ -1,6 +1,6 @@
-
-import React, {useState} from 'react';
-import { Breadcrumb, Layout, Menu, theme,Button } from 'antd';
+'use client';
+import { useState } from 'react';
+import { Breadcrumb, Layout, Menu, theme, Button } from 'antd';
 import {
     CaretUpFilled,
     MenuFoldOutlined,
